@@ -25,35 +25,39 @@ public static void main(String[] args) {
 		
     String from = "보내는 사람";
     String to = "받는 사람";
-//	String configSet = "ConfigSet"; // Optional
+//	String configSet = "ConfigSet";
     String subject = "Amazon SES test (AWS SDK for Java)";
     String htmlBody = "<h1>Amazon SES test (AWS SDK for Java)</h1>"
-                + "<p>This email was sent with <a href='https://aws.amazon.com/ses/'>"
-                + "Amazon SES</a> using the <a href='https://aws.amazon.com/sdk-for-java/'>" 
+                + "<p>This email was sent with "
+                + "<a href='https://aws.amazon.com/ses/'>"
+                + "Amazon SES</a> using the "
+                + "<a href='https://aws.amazon.com/sdk-for-java/'>" 
                 + "AWS SDK for Java</a>";
     String textBody = "This email was sent through Amazon SES "
                 + "using the AWS SDK for Java.";
     
     AWSCredentials awsCreds = new BasicAWSCredentials(AccessKey, SecretKey);
     
-    AmazonSimpleEmailServiceClientBuilder builder = AmazonSimpleEmailServiceClientBuilder.standard();
+    AmazonSimpleEmailServiceClientBuilder builder 
+        = AmazonSimpleEmailServiceClientBuilder.standard();
     
-    AmazonSimpleEmailService ses = builder.withRegion(Regions.US_EAST_1)
-                                .withCredentials(new AWSStaticCredentialsProvider(awsCreds))
-                                .build();
+    AmazonSimpleEmailService ses 
+        = builder.withRegion(Regions.US_EAST_1)
+                    .withCredentials(new AWSStaticCredentialsProvider(awsCreds))
+                    .build();
     
     try {
         SendEmailRequest request = new SendEmailRequest()
-                .withDestination(new Destination().withToAddresses(to))
-                .withMessage(new Message().withBody(
-                            new Body()
-                                .withHtml(new Content("UTF-8").withData(htmlBody))
-                                .withText(new Content("UTF-8").withData(textBody))
-                                )
-                            .withSubject(new Content().withCharset("UTF-8").withData(subject))
+            .withDestination(new Destination().withToAddresses(to))
+            .withMessage(new Message().withBody(
+                        new Body()
+                            .withHtml(new Content("UTF-8").withData(htmlBody))
+                            .withText(new Content("UTF-8").withData(textBody))
                             )
-                .withSource(from);
-//					.withConfigurationSetName(configSet); // Optional
+                        .withSubject(new Content().withCharset("UTF-8").withData(subject))
+                        )
+            .withSource(from);
+//			.withConfigurationSetName(configSet);
         
         ses.sendEmail(request);
         System.out.println("Email sent!");
