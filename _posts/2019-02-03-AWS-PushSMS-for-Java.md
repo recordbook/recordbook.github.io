@@ -62,7 +62,7 @@ class의 주석에 명시된대로 AmazonSNSClientBuilder를 사용하면 되겠
 
 ```java
 BasicAWSCredentials awsCreds = new BasicAWSCredentials(AccessKey, SecretKey);
-        
+
 AmazonSNSClientBuilder builder = AmazonSNSClientBuilder.standard();
 
 AmazonSNS sns = builder.withRegion(Regions.US_EAST_1)
@@ -75,7 +75,7 @@ builder를 통해 위와 같은 형태로 구성하면 된다.
 
 ```java
 public static void main(String[] args) {
-        
+
     BasicAWSCredentials awsCreds = 
         new BasicAWSCredentials(AccessKey, SecretKey);
     
@@ -121,7 +121,7 @@ public static void sendSMSMessage(AmazonSNS sns
         .withMessageAttributes(smsAttributes)
         );
     
-    System.out.println(result); // {MessageId: 7ace45e4-31wr-5353-b2f2-17759c45d913}
+    System.out.println(result); // result ex) {MessageId: 7ace45e4-31wr-5353-b2f2-17759c45d913}
 }
 ```
 
