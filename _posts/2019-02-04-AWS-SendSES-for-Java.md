@@ -54,10 +54,12 @@ public static void main(String[] args) {
                             .withHtml(new Content("UTF-8").withData(htmlBody))
                             .withText(new Content("UTF-8").withData(textBody))
                             )
-                        .withSubject(new Content().withCharset("UTF-8").withData(subject))
+                        .withSubject(
+                            new Content().withCharset("UTF-8").withData(subject)
+                            )
                         )
             .withSource(from);
-//			.withConfigurationSetName(configSet);
+//	    .withConfigurationSetName(configSet);
         
         ses.sendEmail(request);
         System.out.println("Email sent!");
