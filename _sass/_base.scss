@@ -72,17 +72,20 @@ td {
 }
 
 ::selection {
-    background: $purple;
+    // background: $purple;
+    background: $red;
     color: #FFF;
     text-shadow: none;
 }
 ::-moz-selection {
-    background: $purple;
+    // background: $purple;
+    background: $red;
     color: #FFF;
     text-shadow: none;
 }
 ::-webkit-selection {
-    background: $purple;
+    // background: $purple;
+    background: $red;
     color: #FFF;
     text-shadow: none;
 }
