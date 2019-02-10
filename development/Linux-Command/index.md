@@ -1,9 +1,12 @@
 ---
 layout: post
-title:  "Linux Command(리눅스 명령어 모음)"
-date:   2019-01-11 13:14:00
-categories: Linux
-permalink: /archivers/linux/command/1
+title:  "Linux Command"
+subtitle: "리눅스 명령어 모음"
+type: "Linux"
+date: 2019-01-11 13:14:00
+development: true
+text: true
+author: "Choi corder"
 ---
 
 리눅스 명령어 모음(Linux Command Set)

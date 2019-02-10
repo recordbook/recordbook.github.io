@@ -1,9 +1,12 @@
 ---
 layout: post
-title:  "마크다운 문법"
-date:   2019-01-14 17:37:00
-categories: Markdown
-permalink: /archivers/Markdown/1
+title:  "MarkDown Grammar"
+subtitle: "마크다운 문법"
+type: "Markdown"
+date: 2019-01-14 17:37:00
+development: true
+text: true
+author: "Choi corder"
 ---
 
 작성 예정.
