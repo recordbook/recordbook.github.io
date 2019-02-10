@@ -1,55 +1,119 @@
-# jekyll-theme-EasyBook
+# Tale
 
-Another Jekyll Blog Theme "EasyBook"
+[![Gem Version](https://badge.fury.io/rb/tale.svg)](https://badge.fury.io/rb/tale)
 
-Start blogging with a simple but powerful theme.
+Tale is a minimal Jekyll theme curated for storytellers. Checkout the demo [here](https://chesterhow.github.io/tale/).
+
+![Tale screenshot](http://i.imgur.com/pXZrtmo.png)
 
 ## Features
+- Easy installation
+- Compatible with GitHub Pages
+- Responsive design (looks just as good on mobile)
+- Syntax highlighting, with the help of Pygments
+- Markdown and HTML text formatting
+- Pagination of posts
 
-- Everything Basic Jekyll has.
-- **Pagination** is enabled.
-- **Comments** using Disqus or 多说.
-- **TOC** makes reading easier.
-- **Profile** including your links and avatar on the sidebar.
-- *And more...*
+## Installation
+There are 3 ways to install this theme
 
-## Install
+1. Install it as a Ruby Gem (for self-hosted sites)
+2. Install it with the `jekyll-remote-theme` plugin (for GitHub Pages hosted sites)
+3. Fork the project directly
 
-Read [Quick Guide] to learn how to install and publish.
+### Ruby Gem method
+1. Add this line to your `Gemfile`:
 
-Read [Welcome to Jekyll and EasyBook][helloPost] and [Jekyll][jekyll] for further information.
+```ruby
+gem "tale"
+```
 
-**If need help, please:**
+2. Install the theme's gems and dependencies:
 
- - [**Read Wiki pages**](https://github.com/laobubu/jekyll-theme-EasyBook/wiki)
- - **Google it**
- - [**Submit an issue**](https://github.com/laobubu/jekyll-theme-EasyBook/issues/new)
+```bash
+$ bundle
+```
 
-## Donate
+3. In `_config.yml` add these lines:
 
-Buy me a coffee if you find EasyBook useful for you :smiley:
+```yaml
+theme:      tale
 
-Visit <http://laobubu.net/donate.html>
+permalink:  /:year-:month-:day/:title
+paginate:   5
+```
 
-## Demo
+Remove any other `theme:` lines.
 
-[laobubu's blog](http://blog.laobubu.net) | [empty site](http://laobubu.github.io/jekyll-theme-EasyBook)
+4. Rename `index.md` to `index.html`. Without this, the `jekyll-paginate` gem will not work.
 
-![Homepage](https://ooo.0o0.ooo/2016/02/11/56bc997c65daf.png)
+5. In `about.md`, change the `layout:` field to `post`:
+
+```Markdown
+layout: post
+```
+
+### GitHub Pages method
+1. Add these 2 lines in to your `Gemfile`:
+
+```ruby
+gem "jekyll-remote-theme"
+gem "jekyll-paginate"
+```
+
+2. Install the newly added gems:
+
+```bash
+$ bundle
+```
+
+3. In `_config.yml` add these lines:
+
+```yaml
+remote_theme: chesterhow/tale
+
+permalink:    /:year-:month-:day/:title
+paginate:     5
+
+plugins:
+  - jekyll-paginate
+  - jekyll-remote-theme
+```
+
+Remove any other `theme:` or `remote_theme:` lines.
+
+4. Rename `index.md` to `index.html`. Without this, the `jekyll-paginate` gem will not work.
+
+5. In `about.md`, change the `layout:` field to `post`:
+
+```Markdown
+layout: post
+```
+
+### Fork method
+1. Fork this repository
+
+2. Delete the unnecessary files/folders: `CODE_OF_CONDUCT.md`, `LICENSE`, `README.md`, `tale.gemspec`
+
+3. Delete the `baseurl` line in `_config.yml`:
+
+```yaml
+baseurl:  "/tale"   # delete this line
+```
+
+## Usage
+Once you've installed the theme, you're ready to work on your Jekyll site. To start off, I would recommend updating `_config.yml` with your site's details.
+
+To build and serve your site, run:
+
+```bash
+$ bundle exec jekyll serve
+```
+
+And you're all set! Head over to http://127.0.0.1:4000/ to see your site in action.
+
+## Contributing
+Found a bug or have a suggestion? Feel free to create an issue or make a pull request!
 
 ## License
-
-```
-The MIT License (MIT)
-Copyright (c) 2016 laobubu
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-```
-
-[Quick Guide]: https://github.com/laobubu/jekyll-theme-EasyBook/wiki/Quick-Guide
-[helloPost]: http://laobubu.github.io/jekyll-theme-EasyBook/archivers/hello
-[jekyll]: http://jekyllrb.com/
+See [LICENSE](https://github.com/chesterhow/tale/blob/master/LICENSE)

@@ -1,61 +1,38 @@
 # Site settings
-title: hyuns.io
-url: "https://recordbook.github.io/"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
-#baseurl: "/jekyll-theme-EasyBook" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
-baseurl: ""
-timezone: Asia/Seoul
-description: >
-  One or more sentences introducing this blog.
+title:          Tale
+description:    "Minimal Jekyll theme for storytellers"
+baseurl:        "/tale"
+url:            "https://chesterhow.github.io"
 
-# Your information
-email: lohremnt@gmail.com
-author: Choi Corder
-avatar: "//www.gravatar.com/avatar/your_email_md5?d=mm&s=135"
-profile: 즐겁게 사는 법을 공부하고 있습니다.
-#twitter_username: twitter_username
-#github_username:  github_username
-profile_links:
-  Email: "mailto:lohremnt@gmail.com"
-  # GitHub: "https://github.com/recordbook"
-  # You can add more profile links above, or edit _includes/sidebar.html 
+# Google Analytics
+google_analytics: UA—XXXXXXXX-X
 
-# Comment Service (Disqus or 多说)
-#  choose one and un-comment the line to active it
-disqus_shortname: hyuns   # get one: https://disqus.com/admin/signup/
-#duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
-
-excerpt_separator: <!--more-->
-
-header:
-  links:             # Links on the header. Link to in-site page with a slash as prefix
-    About: /about/
-    Category: /category/
-    # Donate: https://laobubu.net/donate.html
-
-permalink: /archivers/:title
-# permalink: /:categories/:year/:month/:day/:title:output_ext
-plugins:
- - jekyll-paginate
- - jekyll-gist
- - jemoji
+# Author
+author:
+  name:         Chester How
+  url:          https://chester.how
+  email:        chesterhow@gmail.com
 
 # Build settings
-paginate: 5
-paginate_path: "page:num"
+markdown:       kramdown
+include:
+  - _pages
 
-highlighter: rouge
-markdown: kramdown
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
 
-# https://jekyllrb.com/docs/configuration/#precedence
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  # - jemoji #Uncomment this to allow emoji in your post
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  math_engine: mathjax
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
