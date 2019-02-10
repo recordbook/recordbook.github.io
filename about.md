@@ -6,10 +6,10 @@ type: "About"
 author: "author"
 permalink: /about/
 post-header: true
-header-img: img/about.jpg
+header-img: img/aboutImg.jpg
 ---
 
-test
+일상 생활 및 개발 관련 내용을 올리는 블로그입니다! 
 
 <!-- # Media
 
