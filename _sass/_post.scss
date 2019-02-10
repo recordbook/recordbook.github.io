@@ -248,6 +248,19 @@ sup {
     }        
 }
 
+.post-info>p.post-info-2 {
+    padding: 0 0 60px 0;
+    font-weight: 400;
+    font-size: 22px;
+    color: $grey-1;
+    line-height: 1.5;
+
+    @media (max-width: $break-small) {
+        font-size: 15px;
+        padding: 0 0 90px 0;
+    }        
+}
+
 .catalogue-tag {
     font-family: $source;
     display: inline-block;

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MarkDown Grammar"
-subtitle: "마크다운 문법"
+# subtitle: "마크다운 문법"
 type: "Markdown"
 date: 2019-01-14 17:37:00
 development: true
