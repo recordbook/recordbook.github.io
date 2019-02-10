@@ -3,7 +3,7 @@ layout: post
 title:  "도움되는 사이트 모음"
 subtitle: "즐겨찾기 대신!"
 type: "Help Site"
-date:   2019-01-14 17:37:00
+date: 2019-01-14 17:37:00
 development: true
 text: true
 author: "Choi corder"
