@@ -1,9 +1,12 @@
 ---
 layout: post
-title:  "Assigned tasks"
+title: "Assigned tasks"
+subtitle:  "할 일 목록"
+type: "tasks"
 date:   2019-01-15 15:19:00
-categories: Etc
-permalink: /archivers/task/1
+blog: true
+text: true
+author: "Choi corder"
 ---
 
 # 2019년 1월 3째주
