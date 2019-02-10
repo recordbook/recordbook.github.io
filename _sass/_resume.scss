@@ -3,7 +3,7 @@
     font-family: $source;
     font-size: 18px;
     font-weight: 600;
-    color: $purple;
+    color: $customColor;
     vertical-align: middle;
     
     .label-emoji {
@@ -18,7 +18,7 @@ div.resume-info {
     svg {
         width: 24px;
         // fill: $purple;
-        fill: $blue;
+        fill: $customColor;
         position: absolute;
     }
 }
