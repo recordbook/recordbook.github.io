@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "도움되는 사이트 모음"
-subtitle: "즐겨찾기 대신!"
-type: "Help Site"
+title:  "Help Site"
+subtitle: "도움되는 사이트"
+type: "Etc"
 date: 2019-01-14 17:37:00
 development: true
 text: true
