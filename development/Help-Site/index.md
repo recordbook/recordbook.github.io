@@ -42,6 +42,13 @@ author: "Choi corder"
  * [Ansible 시작하기](http://theeye.pe.kr/archives/2582)  
  * [Ansible 기본 설치](http://avilos.codes/infra-management/system-infra/configuration-management/ansible/ansible-default-installation/)  
   
+  
+# Jekyll
+* [Jekyll Date formatting](https://learn.cloudcannon.com/jekyll/date-formatting/)  
+## Markdwon  
+* [Emoji Hexadecimal & Decimal](https://www.quackit.com/character_sets/emoji/emoji_v3.0/unicode_emoji_v3.0_characters_all.cfm)  
+
+
 # Etc
 ## 기획
  * [헤이딜러에선 어떻게 일하나요?](https://medium.com/prnd/%ED%97%A4%EC%9D%B4%EB%94%9C%EB%9F%AC%EC%97%90%EC%84%9C%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9D%BC%ED%95%98%EB%82%98%EC%9A%94-1fa02b4361b5)
@@ -50,4 +57,4 @@ author: "Choi corder"
  * [한 달 만원으로 스타트업 VPN 구축하기](https://medium.com/chequer/%ED%95%9C%EB%8B%AC-%EB%A7%8C%EC%9B%90%EC%9C%BC%EB%A1%9C-vpn-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0-softether-vpn-openldap-freeradius-9c629f923eb0)
 
 ## English
- * [비슷한 뜻을 가진 영어 단어를 비교](https://wikidiff.com/)
+ * [비슷한 뜻을 가진 영어 단어를 비교](https://wikidiff.com/)  
