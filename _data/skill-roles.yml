@@ -2,3 +2,4 @@
 - name: Jersey Framework
 - name: Java Script
 - name: Node.js
+- name: AWS(EC2, RDS, Lambda, CloudFront, API Gateway, Route53, SES, SNS)
